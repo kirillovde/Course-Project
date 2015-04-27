@@ -1,0 +1,23 @@
+# CodeBook
+
+# Input Data
+
+The data was obtained manually by downloading and unzipping file from `https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip`
+
+The UCI dataset is extracted directly into working directory.
+
+# Output Data
+
+The resulting `tidyset.txt` dataset includes averages and standard deviations 
+variables for the following original variables:
+
+tBodyAcc, tGravityAcc, tBodyAccJerk, tBodyGyro, tBodyGyroJerk, tBodyAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag, fBodyAcc, fBodyAccJerk, fBodyGyro, fBodyAccMag, fBodyBodyAccJerkMag, fBodyBodyGyroMag, fBodyBodyGyroJerkMag. All three X, Y, Z directions are included.
+
+# Transformations
+
+The script, `run_analysis.R`, does the following,
+
+* Load the various files which make-up the UCI dataset
+* Merges the three `test` and three `train` files into a single data table, setting textual columns heading where possible
+* Computes the means of this secondary dataset, grouped by subject and activity.
+* Saves this last dataset to `./tidyset.txt`

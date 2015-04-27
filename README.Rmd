@@ -1,0 +1,22 @@
+# Getting and Cleaning Data Course Project
+
+This project contains one R script, `run_analysis.R`, which: 
+
+* Load the various files which make-up the UCI dataset
+* Merges the three `test` and three `train` files into a single data table, setting textual columns heading where possible
+* Computes the means of this secondary dataset, grouped by subject and activity.
+* Saves this last dataset to `./tidyset.txt`.
+
+Once executed, the resulting dataset maybe found at `./tidyset.txt`
+
+## References
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+## Required R Packages
+
+The R package `data.table` is required to run this script. This maybe installed with,
+
+```{r}
+install.package("data.table")
+```
