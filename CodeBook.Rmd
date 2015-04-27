@@ -8,8 +8,8 @@ The UCI dataset should be extracted directly into working directory.
 
 # Output Data
 
-The resulting `tidyset.txt` dataset includes averages and standard deviations 
-variables for the following original variables:
+The resulting `tidyset.txt` dataset includes averages of means and standard deviations 
+variables grouped by subject and activity for the following original variables:
 
 tBodyAcc, tGravityAcc, tBodyAccJerk, tBodyGyro, tBodyGyroJerk, tBodyAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag, fBodyAcc, fBodyAccJerk, fBodyGyro, fBodyAccMag, fBodyBodyAccJerkMag, fBodyBodyGyroMag, fBodyBodyGyroJerkMag. All three X, Y, Z directions are included.
 
