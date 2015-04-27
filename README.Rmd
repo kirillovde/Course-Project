@@ -4,7 +4,7 @@ This project contains one R script, `run_analysis.R`, which:
 
 * Load the various files which make-up the UCI dataset
 * Merges the three `test` and three `train` files into a single data table, setting textual columns heading where possible
-* Computes the means of this secondary dataset, grouped by subject and activity.
+* Computes the means of mean and std variables, grouped by subject and activity.
 * Saves this last dataset to `./tidyset.txt`.
 
 Once executed, the resulting dataset maybe found at `./tidyset.txt`
