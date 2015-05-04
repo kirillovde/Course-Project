@@ -18,9 +18,7 @@ subject<- rbind(subject_test, subject_train)
 
 #binding all data into one dataset
 X<- cbind(y, subject, X)
-colnames(X)=c("Activity", "Subject", features[["V2"]])
 # subsetting only mean and std columns
-X<- X[,like(colnames(X),"(.*)Activity|Subject|mean|std(.*)"), with = F]
 setkey(X, Activity)
 
 # adding descriptive column names
